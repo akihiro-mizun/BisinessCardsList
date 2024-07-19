@@ -1,6 +1,6 @@
 import { useEffect , useState } from 'react';
 import { useLocation } from "react-router-dom";
-import { doc, getDoc, query, collection, where } from "firebase/firestore";
+import { getDocs, query, collection, where } from "firebase/firestore";
 import { useQRCode } from 'next-qrcode';
 
 import { db } from "../firebase";
@@ -21,31 +21,34 @@ function  Sample002() {
   const search = useLocation().search;
 
   // 初回のみ実行
-  useEffect(() => {
-
+  useEffect( () =>{
     // URL引数取得
     const urlquery = new URLSearchParams(search);
     let dId= urlquery.get('id');
     if (dId === null || dId === '') {
       dId = '00000000000000000000'
     }
-
-    //const querySnapshot = doc(db, "UserInfo", dId );
-    const q = query(collection(db, "UserInfo" ), where("DisplayUserId", "==", dId));
-    const querySnapshot = doc(q);
-    getDoc(querySnapshot).then((userInfoResult) => {
-      setCompanyName(userInfoResult!.data()!.CompanyName);
-      setUserName(userInfoResult!.data()!.UserName);
-      setPost(userInfoResult!.data()!.Post);
-      setPostNo(userInfoResult!.data()!.PostNo);
-      setAddress1(userInfoResult!.data()!.Address1);
-      setAddress2(userInfoResult!.data()!.Address2);
-      setTelNo(userInfoResult!.data()!.TelNo);
-      setURL(userInfoResult!.data()!.Url);
-    });
-
+    select(dId);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // ユーザ情報取得
+  const select = async (did: string) => {
+    const userCollectionRef = collection(db, "UserInfo");
+    const q = query(userCollectionRef, where("DisplayUserId", "==", did));
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach(async (document) => {
+      setCompanyName(document.data().CompanyName);
+      setUserName(document.data().UserName);
+      setPost(document.data().Post);
+      setPostNo(document.data().PostNo);
+      setAddress1(document.data().Address1);
+      setAddress2(document.data().Address2);
+      setTelNo(document.data().TelNo);
+      setURL(document.data().Url);
+    });
+  };
+
     return (
       <div className={styles.tmpImageBGI}>
       <div className={ styles.companyNameStyle }>{ companyName }</div>
