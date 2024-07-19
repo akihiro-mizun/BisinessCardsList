@@ -1,0 +1,11 @@
+
+/* 背景画像のスタイル */
+.tmpImageBGI {
+    width: 344px;
+    height: 208px;
+    background-color: #dd5268;
+    background-image:url("./img/TestTemp001.png");
+    background-repeat: no-repeat;
+    background-position:0% 0%;
+    display: inline-block;
+  }
