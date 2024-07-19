@@ -56,6 +56,7 @@ function  Sample002() {
         <div className={ styles.address1Style }>{address1}</div>
         <div className={ styles.address2Style }>{address2}</div>
         <div className={ styles.telNoStyle }>Tel：{telNo}</div>
+        <div className={ styles.urlStyle }>Tel：{url}</div>
       </div>
     </div>
     );
