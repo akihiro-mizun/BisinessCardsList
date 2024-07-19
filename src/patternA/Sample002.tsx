@@ -1,6 +1,6 @@
 import { useEffect , useState } from 'react';
 import { useLocation } from "react-router-dom";
-import { doc, getDoc } from "firebase/firestore";
+import { doc, getDoc, query, collection, where } from "firebase/firestore";
 import { useQRCode } from 'next-qrcode';
 
 import { db } from "../firebase";
@@ -30,8 +30,10 @@ function  Sample002() {
       dId = '00000000000000000000'
     }
 
-    const q = doc(db, "UserInfo", dId );
-    getDoc(q).then((userInfoResult) => {
+    //const querySnapshot = doc(db, "UserInfo", dId );
+    const q = query(collection(db, "UserInfo" ), where("DisplayUserId", "==", dId));
+    const querySnapshot = doc(q);
+    getDoc(querySnapshot).then((userInfoResult) => {
       setCompanyName(userInfoResult!.data()!.CompanyName);
       setUserName(userInfoResult!.data()!.UserName);
       setPost(userInfoResult!.data()!.Post);
@@ -56,7 +58,7 @@ function  Sample002() {
         <div className={ styles.address1Style }>{address1}</div>
         <div className={ styles.address2Style }>{address2}</div>
         <div className={ styles.telNoStyle }>Tel：{telNo}</div>
-        <div className={ styles.urlStyle }>Tel：{url}</div>
+        <div className={ styles.urlStyle }>URL：{url}</div>
       </div>
     </div>
     );
