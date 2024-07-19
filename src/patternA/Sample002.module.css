@@ -1,8 +1,8 @@
 
 /* 背景画像のスタイル */
 .tmpImageBGI {
-  width: 344px;
-  height: 208px;
+  width: 1344px;
+  height: 1208px;
   background-color: #dd5268;
   background-image:url("./img/TestTemp002.jpg");
   background-repeat: no-repeat;
