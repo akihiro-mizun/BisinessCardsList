@@ -57,7 +57,7 @@ function  Sample001() {
         <div className={ styles.address2Style }>{address2}</div>
         <div className={ styles.telNoStyle }>Tel：{telNo}</div>
         <div className={ styles.urlStyle }>
-
+        { /* <Canvas text={ url } options={{ type: 'image/png', quality: 0.90, width: 50 }} /> */}
         </div>
       </div>
     </div>
