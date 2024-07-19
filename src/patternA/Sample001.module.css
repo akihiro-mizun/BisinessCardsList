@@ -1,74 +1,74 @@
 
 /* 背景画像のスタイル */
 .tmpImageBGI {
-    width: 344px;
-    height: 208px;
-    background-color: #dd5268;
-    background-image:url("./img/TestTemp001.png");
-    background-repeat: no-repeat;
-    background-position:0% 0%;
-    display: inline-block;
-  }
+  width: 364px;
+  height: 220px;
+  background-color: #dd5268;
+  background-image:url("./img/TestTemp001.png");
+  background-repeat: no-repeat;
+  background-position:0% 0%;
+  display: inline-block;
+}
   
-  .brockStyle{
-    text-align: right;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-bottom: 60px;
-  }
+.brockStyle{
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 60px;
+}
   
-  /* 会社名のスタイル */
-  .companyNameStyle {
-    color: red;
-    font-size: 18px;
-    font-weight:700;
-  }
+/* 会社名のスタイル */
+.companyNameStyle {
+  color: red;
+  font-size: 18px;
+  font-weight:700;
+}
   
-  /* 役職のスタイル */
-  .postStyle {
-    vertical-align:top; 
-    display: inline;
-  }
+/* 役職のスタイル */
+.postStyle {
+  vertical-align:top; 
+  display: inline;
+}
   
-  /* ユーザ名のスタイル */
-  .userNameStyle {
-    vertical-align:top; 
-    font-size: 24px;
-    display: inline;
-  }
+/* ユーザ名のスタイル */
+.userNameStyle {
+  vertical-align:top; 
+  font-size: 24px;
+  display: inline;
+}
   
-  /* 郵便番号のスタイル */
-  .postNoStyle  {
-    vertical-align:top;
-    font-size: 10px;
-    margin-left: 130px;
-    display: inline;
-  }
+/* 郵便番号のスタイル */
+.postNoStyle  {
+  vertical-align:top;
+  font-size: 10px;
+  margin-left: 130px;
+  display: inline;
+}
   
-  /* 住所1のスタイル */
-  .address1Style  {
-    vertical-align:top;
-    font-size: 10px;
-    margin-left: 10px;
-    display: inline;
-  }
+/* 住所1のスタイル */
+.address1Style  {
+  vertical-align:top;
+  font-size: 10px;
+  margin-left: 10px;
+  display: inline;
+}
   
-  /* 住所2のスタイル */
-  .address2Style  {
-    font-size: 10px;
-    margin-top: -6px;
-    margin-left: 192px;
-  }
+/* 住所2のスタイル */
+.address2Style  {
+  font-size: 10px;
+  margin-top: -6px;
+  margin-left: 192px;
+}
   
-  /* 電話番号のスタイル */
-  .telNoStyle  {
-    font-size: 10px;
-    margin-left: 192px;
-  }
+/* 電話番号のスタイル */
+.telNoStyle  {
+  font-size: 10px;
+  margin-left: 192px;
+}
   
-  /* urlのスタイル */
-  .urlStyle  {
-    margin-top: -40px;
-    margin-left: 10px;
-  }
+/* urlのスタイル */
+.urlStyle  {
+  margin-top: -40px;
+  margin-left: 10px;
+}
   

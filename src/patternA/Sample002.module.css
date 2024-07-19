@@ -1,8 +1,9 @@
 
 /* 背景画像のスタイル */
+/* https://www.saruwakakun.com/tools/image-resize/ でリサイズする */
 .tmpImageBGI {
-  width: 1344px;
-  height: 1208px;
+  width: 364px;
+  height: 220px;
   background-color: #dd5268;
   background-image:url("./img/TestTemp002.jpg");
   background-repeat: no-repeat;
@@ -56,18 +57,19 @@
 /* 住所2のスタイル */
 .address2Style  {
   font-size: 10px;
-  margin-top: -6px;
+  margin-top: -12px;
   margin-left: 192px;
 }
 
 /* 電話番号のスタイル */
 .telNoStyle  {
   font-size: 10px;
+  margin-top: -6px;
   margin-left: 192px;
 }
 
 /* urlのスタイル */
 .urlStyle  {
-  margin-top: -40px;
-  margin-left: 10px;
+  font-size: 10px;
+  margin-left: 192px;
 }
