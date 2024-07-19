@@ -46,10 +46,8 @@ function  Sample002() {
   }, []);
     return (
       <div className={styles.tmpImageBGI}>
-      <div className="Sample002">
         <div>Hello World Sample002</div>
-      </div>
-      <div className={ styles.companyNameStyle }>{ companyName }</div>
+        <div className={ styles.companyNameStyle }>{ companyName }</div>
       </div>
     );
   };
