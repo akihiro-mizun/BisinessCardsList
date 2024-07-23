@@ -6,7 +6,6 @@ import { useQRCode } from 'next-qrcode';
 import { db } from "../firebase";
 import styles from "./Sample002.module.css";
 
-
 function  Sample002() {
   const [companyName, setCompanyName] = useState('');
   const [userName, setUserName] = useState('');
@@ -21,7 +20,7 @@ function  Sample002() {
   const search = useLocation().search;
 
   // 初回のみ実行
-  useEffect( () =>{
+  useEffect(() => {
     // URL引数取得
     const urlquery = new URLSearchParams(search);
     let dId= urlquery.get('id');
@@ -31,8 +30,6 @@ function  Sample002() {
     else{
       select(dId);
     }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // ユーザ情報取得
@@ -51,7 +48,7 @@ function  Sample002() {
       setURL(document.data().Url);
     });
   };
-  
+
   // ユーザ情報取得
   const selectTemp = async (id: string) => {
     const querySnapshot = doc(db, "UserInfo", id );
