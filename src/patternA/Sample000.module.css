@@ -1,0 +1,12 @@
+
+/* 背景画像のスタイル */
+/* https://www.saruwakakun.com/tools/image-resize/ でリサイズする */
+.tmpImageBGI {
+    width: 364px;
+    height: 220px;
+    background-color: #dd5268;
+    background-image:url("./img/TestTemp001.png");
+    background-repeat: no-repeat;
+    background-position:0% 0%;
+    display: inline-block;
+  }
