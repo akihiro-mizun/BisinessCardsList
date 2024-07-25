@@ -5,6 +5,9 @@ function Home() {
     <div>
       <h1>Homeページ</h1>
       <div>
+        <Link to={'/PatternA000'}>NO IMAGE</Link>
+      </div>
+      <div>
         <Link to={'/PatternA001'}>名刺テンプレートA001を開く</Link>
       </div>
       <div>
