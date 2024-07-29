@@ -13,12 +13,20 @@
   
 .brockStyle{
   text-align: right;
-  height: 90px;
+  height: 60px;
   margin-top: 20px;
   margin-right: 10px;
   margin-bottom: 60px;
 }
   
+.brockStyle2{
+  text-align: right;
+  height: 90px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 60px;
+}
+
 /* 会社名のスタイル */
 .companyNameStyle {
   color: red;
