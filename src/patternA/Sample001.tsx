@@ -71,7 +71,7 @@ function  Sample001() {
         <div className={ styles.postStyle }>{post}：</div>
         <div className={ styles.userNameStyle }>{ userName }</div>
       </div>
-      <div>
+      <div className={ styles.brockStyle }>
         <div className={ styles.postNoStyle }>〒{postNo}</div>
         <div className={ styles.address1Style }>{address1}</div>
         <div className={ styles.address2Style }>{address2}</div>
