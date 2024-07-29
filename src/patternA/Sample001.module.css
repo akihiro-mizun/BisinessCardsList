@@ -23,7 +23,7 @@
 .brockStyle2{
   text-align: right;
   height: 90px;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-right: 10px;
   margin-bottom: 60px;
   background-color: #30b14c;
@@ -80,7 +80,7 @@
   
 /* urlのスタイル */
 .urlStyle  {
-  margin-top: -40px;
+  margin-top: 10px;
   margin-left: 10px;
 }
   
