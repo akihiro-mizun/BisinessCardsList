@@ -66,8 +66,8 @@ function  Sample001() {
 
   return (
     <div className={styles.tmpImageBGI}>
+      <div className={ styles.companyNameStyle }>{ companyName }</div>
       <div className={ styles.brockStyle }>
-        <div className={ styles.companyNameStyle }>{ companyName }</div>
         <div className={ styles.postStyle }>{post}：</div>
         <div className={ styles.userNameStyle }>{ userName }</div>
       </div>
